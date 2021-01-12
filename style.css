@@ -1,0 +1,56 @@
+
+main{
+  margin-left: 300px;
+  margin-top: 30px;
+}
+
+body{
+  background-color: #006935;;
+}
+
+ .dimensao_casa{
+   width: 1fr;
+   height: 10vh;
+   margin: 0;
+ } 
+
+.container{
+  display: grid;
+  max-width: 50%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh ;
+  grid-template-areas: "1 2 3 4 5 6 7 8";
+  border: groove #bb8330 30px;
+}
+  
+.campo-claro div:nth-child(2n+1) {
+  background-color: #f3ba60;
+  }
+
+.campo-claro div:nth-child(2n) {
+  background-color: #8e5354; }
+
+.campo-escuro div:nth-child(2n+1) {
+  background-color: #8e5354; }
+
+.campo-escuro div:nth-child(2n) {
+  background-color: #f3ba60; }
+
+.fonte{
+  text-align: center;
+  font-size: 50px;
+}
+
+.peca_branca{
+  color: #ffffff
+} 
+
+@media(min-width: 200px) and(max-width:600px){
+ .container{ max-width: 80%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh ;
+  grid-template-areas: "1 2 3 4 5 6 7 8";
+  border: groove #bb8330 30px;
+ }
+
+}
